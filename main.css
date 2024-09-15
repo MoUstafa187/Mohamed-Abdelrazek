@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fffdf9;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 32px;
+  padding: 24px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+.heading__logo {
+  max-width: 200px;
+}
+.heading__link {
+  text-decoration: none;
+  color: #1d1e22;
+  font-weight: 400;
+  font-family: Poppins, sans-serif;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin: 32px;
+  padding: 32px;
+  color: #212529;
+  font-family: Poppins, sans-serif;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin: 32px 0;
+}
+.hero__content__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.hero__tag {
+  color: #1d1e22;
+  font-size: 16px;
+  background-color: #e4e4e4;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 300;
+  align-self: flex-start;
+}
+.hero__content__description h1 {
+  color: #212529;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 60px;
+  align-self: flex-start;
+}
+.hero__content__description-aboutMe {
+  color: #1d1e22;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.hero__button {
+  text-decoration: none;
+  color: #fffdf9;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.25px;
+  padding: 25px 32px;
+  background-color: #1d1e22;
+  border-radius: 999px;
+}
+.hero__clints {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.hero__clints-heading {
+  color: #1d1e22;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+}
+.hero__clints-logos {
+  display: flex;
+  gap: 32px;
+}
+.hero__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
+  max-width: 400px;
+}
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero__image {
+    order: 0;
+  }
+  .hero__content {
+    order: 1;
+  }
+}
